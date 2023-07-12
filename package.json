@@ -14,7 +14,11 @@
     "prepare": "husky install",
     "release": "standard-version --no-verify"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "builderhub",
+    "chang soft I&I"
+  ],
   "author": {
     "name": "Eunchurn Park",
     "email": "eunchurn.park@gmail.com"

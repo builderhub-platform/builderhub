@@ -19,5 +19,11 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": false
   },
-  "cSpell.words": ["builderhub", "typecheck"]
+  "cSpell.words": [
+    "builderhub",
+    "Eunchurn",
+    "outro",
+    "picocolors",
+    "typecheck"
+  ]
 }
