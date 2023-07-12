@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { intro, outro, spinner } from "@clack/prompts";
 import color from "picocolors";
 
