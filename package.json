@@ -8,7 +8,9 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
     "test:ci": "turbo run test:ci",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "packages:version": "changeset version",
+    "packages:publish": "changeset publish"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
@@ -16,9 +18,10 @@
     ]
   },
   "devDependencies": {
-    "@builderhub/tsconfig": "workspace:*",
     "@builderhub/eslint-config": "workspace:*",
     "@builderhub/prettier-config": "workspace:*",
+    "@builderhub/tsconfig": "workspace:*",
+    "@changesets/cli": "^2.26.2",
     "@types/node": "^20.9.2",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.54.0",

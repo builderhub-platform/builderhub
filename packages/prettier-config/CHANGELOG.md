@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0
+
+### Major Changes
+
+- changeset added
+
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### [0.0.13](https://github.com/builderhub-platform/prettier-config/compare/v0.0.12...v0.0.13) (2023-11-17)

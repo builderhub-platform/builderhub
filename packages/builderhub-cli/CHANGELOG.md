@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0
+
+### Major Changes
+
+- changeset added
+
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### [0.0.5](https://github.com/builderhub-platform/builderhub/compare/v0.0.4...v0.0.5) (2023-07-12)
