@@ -9,6 +9,7 @@
     "test": "turbo run test",
     "test:ci": "turbo run test:ci",
     "prepare": "husky install",
+    "typecheck": "turbo run typecheck",
     "packages:version": "changeset version",
     "packages:publish": "changeset publish"
   },
