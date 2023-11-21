@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@types/eslint": "8.44.7",
-    "@types/node": "20.9.1",
+    "@types/node": "20.9.3",
     "@types/prettier": "2.7.3",
     "husky": "8.0.3",
     "lint-staged": "15.1.0",
