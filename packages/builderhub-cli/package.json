@@ -54,5 +54,8 @@
   "bugs": {
     "url": "https://github.com/builderhub-platform/builderhub/issues"
   },
-  "homepage": "https://github.com/builderhub-platform/builderhub#readme"
+  "homepage": "https://github.com/builderhub-platform/builderhub#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
