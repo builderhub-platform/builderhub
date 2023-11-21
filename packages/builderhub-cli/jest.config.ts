@@ -5,14 +5,14 @@ const compilerOptionsPaths = (() => {
   const configFileName = ts.findConfigFile(
     "../",
     ts.sys.fileExists,
-    "tsconfig.json"
+    "tsconfig.json",
   );
   if (configFileName) {
     const configFile = ts.readConfigFile(configFileName, ts.sys.readFile);
     const option = ts.parseJsonConfigFileContent(
       configFile.config,
       ts.sys,
-      "./"
+      "./",
     );
     return option.raw.compilerOptions.paths;
   }
