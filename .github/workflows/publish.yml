@@ -57,15 +57,11 @@ jobs:
             ${{ runner.os }}-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Type check
-        run: ${{ steps.detect-package-manager.outputs.manager }} typecheck
-      - name: TypeScript build
-        run: ${{ steps.detect-package-manager.outputs.runner }} build
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: ${{ steps.detect-package-manager.outputs.runner }} packages:publish
+          publish: ${{ steps.detect-package-manager.outputs.runner }} publish-packages
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

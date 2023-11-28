@@ -5,6 +5,7 @@
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {},
-    "typecheck": {}
+    "typecheck": {},
+    "test": {}
   }
 }
