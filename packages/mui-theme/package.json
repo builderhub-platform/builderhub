@@ -23,13 +23,13 @@
   ],
   "author": "Builderhub Platform Dev Team",
   "license": "MIT",
-  "homepage": "https://github.com/builderhub-platform/mui-theme#readme",
+  "homepage": "https://github.com/builderhub-platform/builderhub#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/builderhub-platform/mui-theme.git"
+    "url": "git+https://github.com/builderhub-platform/builderhub.git"
   },
   "bugs": {
-    "url": "https://github.com/builderhub-platform/mui-theme/issues"
+    "url": "https://github.com/builderhub-platform/builderhub/issues"
   },
   "devDependencies": {
     "@builderhub/eslint-config": "workspace:*",
