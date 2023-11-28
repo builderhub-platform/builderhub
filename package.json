@@ -12,7 +12,8 @@
     "typecheck": "turbo run typecheck",
     "packages:version": "changeset version",
     "packages:publish": "changeset publish",
-    "publish-packages": "turbo run build lint typecheck && changeset version && changeset publish"
+    "publish-packages": "turbo run build lint typecheck && changeset version && changeset publish",
+    "ci:publish": "turbo run build lint typecheck && changeset version && pnpm publish -r --access public && changeset tag"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
