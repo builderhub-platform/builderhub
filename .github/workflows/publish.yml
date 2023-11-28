@@ -45,7 +45,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20.x"
-          registry-url: "https://registry.npmjs.org"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Restore cache
         uses: actions/cache@v3
@@ -55,6 +54,13 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}-
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Create Release Pull Request or Publish to npm
